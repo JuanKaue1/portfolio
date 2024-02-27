@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'Montserrant-italic';
+    font-style: italic;
+    src: url(/assets/font/Montserrat/Montserrat-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrant';
+    src: url(/assets/font/Montserrat/Montserrat-VariableFont_wght.ttf);
+}
+
+:root {
+    --grey: #181818;
+}
+
+body {
+    font-family: 'Montserrant';
+    margin-top: 3.6rem;
+}
+
+
+
+#mouse {
+    padding: 1rem;
+}
+
+.mouse1 {
+    width: 2.1rem;
+    height: 3.3rem;
+    border: 2px solid;
+    border-radius: 100rem;
+    display: flex;
+    justify-content: center;
+}
+
+#circle {
+    width: .5rem;
+    height: .5rem;
+    background-color: white;
+    border-radius: 100rem;
+    margin-top: .5rem;
+    animation-name: circle;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    transition: ease-in-out;
+}
+
+@keyframes circle {
+    0% {
+        margin-top: .5rem;
+        opacity: 1;
+    }
+
+    25% {
+        margin-top: .5rem;
+        opacity: 1;
+    }
+
+    50% {
+        margin-top: .5rem;
+        opacity: 1;
+    }
+
+    75% {
+        margin-top: 1.5rem;
+        opacity: .2;
+    }
+
+    100% {
+        margin-top: 1.5rem;
+        opacity: 0;
+    }
+}
+
+
+#skills .btn {
+    margin-right: .4rem;
+    margin-bottom: 0.7rem;
+}
+
+.btn-dark {
+    background-color: #181818;
+    border: 0;
+    border-radius: .2rem;
+    opacity: .75;
+}
+
+.disabled-button {
+    pointer-events: none;
+}
+
+#home {
+    background: url("/assets/img/bg.png");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.bg {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9149860627844888) 0%, rgba(0, 0, 0, 0.4920168751094187) 64%, rgba(255, 255, 255, 0) 100%);
+}
+
+.hapc {
+    height: 100vh;
+}
